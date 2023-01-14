@@ -44,23 +44,43 @@
     padding-top: 31px;
 }
 
+.location{
+    font-weight: bold;
+}
+
 .phone{
     padding-top: 36px;
+}
+
+.phone_number{
+    font-weight: bold;
 }
 
 .emaile{
     padding-top: 36px;
 }
 
+.e_maile{
+    font-weight: bold;
+}
+
 .instagram{
     padding-top: 36px;
+}
+
+.cite_instagram{
+    font-weight: bold;
 }
 
 a{
     text-decoration: none;
 }
 
-p{
+.ukrainian{
+    font-weight: bold;
+}
+
+.english{
     font-weight: bold;
 }
 
@@ -78,6 +98,7 @@ p{
 
 .summary_container{
     margin: 58px 54px 49px 55px;
+    width: 706px;
 }
 
 .summary{
@@ -87,3 +108,95 @@ p{
     margin-bottom: 28px;
 }
 
+.summary_description{
+    font-weight: bold;
+}
+
+.skill{
+    margin-left: 55px;
+}
+
+.skills{
+    border-bottom: 5px solid black;
+    width: 659px;
+    padding: 28px 0px 28px 0px;
+}
+
+.ul_container{
+    font-weight: bold;
+    display: flex;
+}
+
+.ul1{
+flex: 1;
+}
+
+.ul2{
+flex: 1;
+}
+
+.work{
+    margin-left: 55px;
+    margin-top: 49px;
+    width: 706px;
+}
+
+.work_experience{
+    border-bottom: 5px solid black;
+    width: 659px;
+    padding: 28px 0px 28px 0px;
+}
+
+.dates{
+    font-weight: bold;
+}
+
+.job{
+    font-weight: bold;
+}
+
+.project{
+    font-weight: bold;
+}
+
+.name_of{
+    font-weight: bold;
+}
+
+.employer{
+    font-weight: bold;
+}
+
+.employment{
+    font-weight: bold;
+}
+
+.job_title{
+    font-weight: bold;
+}
+
+.role{
+    font-weight: bold;
+}
+
+.education{
+    border-bottom: 5px solid black;
+    width: 659px;
+    padding: 28px 0px 28px 0px;
+}
+
+.education_container{
+    margin: 53px 0px 0px 55px;
+}
+
+.studying{
+    font-weight: bold;
+}
+
+.institution{
+    font-weight: bold;
+}
+
+.major{
+    font-weight: bold;
+}
