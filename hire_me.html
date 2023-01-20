@@ -5,31 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hire me</title>
+    <link rel="stylesheet" href="hire_me.css" />
 </head>
 <body>
     <form action="/hire_me.html" method="get">
     <h1>Hire me</h1>
     <h3>Contact information</h3>
-    <table border="1" cellspasing="0" cellpading="10px">
-        <tr>
-            <th>Phone</th>
-            <td>+380964425111</td>
-        </tr>
-        <tr>
-            <th>Address</th>
-            <td>Zhytomyr</td>
-        </tr>
-    </table>
+    <div>
+        <table class="information">
+            <tr>
+                <th class="phone">Phone</th>
+                <td>+380964425111</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>Zhytomyr</td>
+            </tr>
+        </table>  
+    </div>
 </br>
 
     <fieldset>
         <legend>Contact form</legend>
-       E-mail:<input 
+       <label>E-mail:<input 
        type="email" 
-       required />
+       required placeholder="Enter your E-mail"/></label>
     </br>
-    Description:<textarea rows="3" cols="20">
-    </textarea>
+   <label>Description:<textarea rows="3" cols="20">
+    </textarea></label>
 </br>
  Work type:<select name="Work_type">
     <option value="Full_time">Full time</option>
@@ -38,7 +41,7 @@
     </select>
 </br>
 
-<input type="submit">Hire me</input>
+<input type="submit" value="Hire me"></input>
 </form>
     </fieldset>
 </body>
