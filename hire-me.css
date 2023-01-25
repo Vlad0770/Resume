@@ -1,12 +1,18 @@
 body {
     margin: 0;
     padding: 0;
-    max-width: 1024px;
-    text-align: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.form_hire_me{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .information {
-    display: inline-block;
     border-collapse: collapse;
 }
 
