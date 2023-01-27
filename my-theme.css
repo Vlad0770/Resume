@@ -1,0 +1,30 @@
+.my-theme {
+    /* colors */
+    --bg-color-aside: #C0E8F9;
+    --bg-color-main: #CE7B91;
+    --color-name-primary: #FFFFFF;
+    --color-name-secondary: #FF0303;
+    --color-text-primary: #0022FF;
+    --color-text-secondary: #FF8903;
+    --color-border: rgba(30, 30, 30, 1);
+   
+    /* Padding */
+    --padding-bottom-aside: 15px;
+    --padding-bottom-main: 28px;
+    --padding-left-aside: 40px;
+    --padding-left-main: 25px;
+    --padding-top-aside: 58px;
+    --padding-top: 36px;
+    --padding-top-main: 28px;
+    --padding-top-language: 10px;
+    --padding-bottom-language: 530px;
+   
+    /* Margin */
+    --margin-bottom-main: 28px;
+    --margin-bottom-aside: 36px;
+    --margin-top-aside: 36px; 
+    --margin-top-main: 53px;
+    --margin-left-main: 55px;
+    --margin-right-main: 54px;
+    --margin-left-aside: 40px;
+   }
