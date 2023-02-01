@@ -9,6 +9,7 @@
  --color-border: rgba(30, 30, 30, 1);
 
  /* Padding */
+ --padding: 0px;
  --padding-bottom-aside: 15px;
  --padding-bottom-main: 28px;
  --padding-left-aside: 40px;
@@ -20,6 +21,7 @@
  --padding-bottom-language: 530px;
 
  /* Margin */
+ --margin: 0px;
  --margin-bottom-main: 28px;
  --margin-bottom-aside: 36px;
  --margin-top-aside: 36px; 
@@ -31,18 +33,18 @@
 
 .main {
     color: var(--color-text-primary);
-   font-family: Arial, Helvetica, sans-serif; 
-   display: flex;
-   flex-direction: row;
-   width: 1200px;
-   position: relative;
+    font-family: Arial, Helvetica, sans-serif; 
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: var(--margin);
+    padding: var(--padding);
 }
 
 .personal_info {
     color: var(--color-text-secondary);
     background-color: var(--bg-color-aside);
     width: 385px;
-    position: fixed;
 }
 
 .my_photo{
@@ -129,22 +131,19 @@ a{
     padding-bottom: var(--padding-bottom-aside);
 }
 
-.second_container {
-    position: sticky;
-    left: 385px;
-}
+
 
 .summary_container{
     margin-top: var(--margin-top-main);
     margin-right: var(--margin-right-main);
     margin-bottom: var(--padding-bottom-main);
     margin-left: var(--margin-left-main);
-    width: 706px;
+    max-width: 706px;
 }
 
 .summary{
     border-bottom: 5px solid var(--color-border);
-    width: 659px;
+    max-width: 659px;
     padding-left: var(--padding-left-main);
     padding-bottom: var(--padding-bottom-main);
     margin-bottom: var(--padding-bottom-main);
@@ -161,7 +160,7 @@ a{
 
 .skills{
     border-bottom: 5px solid var(--color-border);
-    width: 659px;
+    max-width: 659px;
     padding: var(--padding-bottom-main);
     padding: var(--padding-top-main);
 }
@@ -182,12 +181,12 @@ flex: 1;
 .work{
     margin-top: var(--margin-top-main);
     margin-left: var(--margin-left-main);
-    width: 706px;
+    max-width: 706px;
 }
 
 .work_experience{
     border-bottom: 5px solid var(--color-border);
-    width: 659px;
+    max-width: 706px;
     padding: var(--padding-bottom-main);
     padding: var(--padding-top-main);
 }
@@ -226,7 +225,7 @@ flex: 1;
 
 .education{
     border-bottom: 5px solid var(--color-border);
-    width: 659px;
+    max-width: 659px;
     padding: var(--padding-bottom-main);
     padding: var(--padding-top-main);
 }
@@ -247,3 +246,21 @@ flex: 1;
 .major{
     font-weight: bold;
 }
+
+@media screen and (max-width: 390px){
+    .main {
+        flex-direction: column; 
+    } 
+    .language {
+        padding-bottom: 20px;
+        } 
+    .second_container {
+        margin-left: -25px;
+        justify-content: center;
+    } 
+}
+
+
+
+
+    
