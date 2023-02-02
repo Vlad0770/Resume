@@ -45,12 +45,20 @@
     color: var(--color-text-secondary);
     background-color: var(--bg-color-aside);
     width: 385px;
+    box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.25);
 }
 
 .my_photo{
     width: 385px;
     height: 292px;
     margin-top: var(--margin-top-aside);
+}
+
+.my_photo:hover {
+    width: 670px;
+    height: 510px;
+    box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.25);
+    transform: scale(1, 1);
 }
 
 .name{
@@ -205,6 +213,14 @@ flex: 1;
 
 .name_of{
     font-weight: bold;
+}
+
+.second_paragraph {
+    opacity: .7;
+}
+
+.second_paragraph:hover {
+    opacity: 1;
 }
 
 .employer{
