@@ -46,6 +46,18 @@
     background-color: var(--bg-color-aside);
     width: 385px;
     box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.25);
+    animation: sectionup 1.5s .5s linear forwards;
+    z-index: 1;
+}
+
+@keyframes sectionup {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
 
 .my_photo{
@@ -55,13 +67,12 @@
     position: relative;
     top: 0;
     left: 0;
-
 }
 
 .my_photo:hover {
     box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.25);
     width: 135%;
-    
+    transition: width 1s linear;
 }
 
 .name{
@@ -142,7 +153,10 @@ a{
     padding-bottom: var(--padding-bottom-aside);
 }
 
-
+.second_container {
+    animation: sectionup 1.5s 1s linear forwards;
+    
+}
 
 .summary_container{
     margin-top: var(--margin-top-main);
@@ -224,6 +238,16 @@ flex: 1;
 
 .second_paragraph:hover {
     opacity: 1;
+    animation: textopacity 1.5s linear forwards;
+}
+
+@keyframes textopacity {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 70%;
+    }
 }
 
 .employer{
