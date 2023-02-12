@@ -1,0 +1,307 @@
+@import "/my-theme.css";
+
+.main-theme {
+    /* colors */
+    $bg-color-aside: #86A3B4;
+    $bg-color-main: #ffffff;
+    $color-name-primary: #FFFFFF;
+    $color-name-secondary: #1C2E8C;
+    $color-text-primary: #000000;
+    $color-text-secondary: #263036;
+    $color-border: rgba(30, 30, 30, 1);
+   
+    /* Padding */
+    $padding: 0px;
+    $padding-bottom-aside: 15px;
+    $padding-bottom-main: 28px;
+    $padding-left-aside: 40px;
+    $padding-left-main: 25px;
+    $padding-top-aside: 58px;
+    $padding-top: 36px;
+    $padding-top-main: 28px;
+    $padding-top-language: 10px;
+    $padding-bottom-language: 530px;
+   
+    /* Margin */
+    $margin: 0px;
+    $margin-bottom-main: 28px;
+    $margin-bottom-aside: 36px;
+    $margin-top-aside: 36px; 
+    $margin-top-main: 53px;
+    $margin-left-main: 55px;
+    $margin-right-main: 54px;
+    $margin-left-aside: 40px;
+
+    $font-weight: bold;
+
+    @mixin anitimfunc($anitimfunc) {
+        animation-timing-function: $anitimfunc;
+    }
+   }
+
+   .main {
+    color: $color-text-primary;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: $margin;
+    padding: $padding;
+   
+    .personal_info {
+        color: $color-text-secondary;
+        background-color: $bg-color-aside;
+        width: 385px;
+        box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.25);
+        animation: sectionup linear forwards;
+        @include anitimfunc(1.5s .5s);
+        z-index: 1;
+    
+    @keyframes sectionup {
+        from {
+            transform: translateY(100%);
+        }
+        to {
+            transform: translateY(0%);
+            opacity: 1;
+        }
+    }
+
+    .my_photo{
+        width: 100%;
+        height: auto;
+        margin-top: $margin-top-aside;
+        position: relative;
+        top: 0;
+        left: 0;
+        &:hover {
+            box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.25);
+            width: 135%;
+            transition: width 1s linear;
+        }
+    }
+
+    .name{
+        color: $color-text-primary;
+        padding-left: $padding-left-aside;
+        padding-top: $padding-top-aside;
+    }
+    
+    .surname{
+        color: $color-name-secondary;
+    }
+
+    .contact{
+        margin-top: $margin-bottom-main;
+        margin-left: $margin-left-aside;
+        margin-bottom: $margin-bottom-aside;
+
+        .title_contact{
+            border-bottom: 5px solid $color-border;
+            padding-bottom: $padding-bottom-aside;
+            width: 289px;
+        }
+        
+        .address{
+            padding-top: $padding-top;
+        }
+        
+        .location{
+            font-weight: $font-weight;
+        }
+        
+        .phone{
+            padding-top: $padding-top;
+        }
+        
+        .phone_number{
+            font-weight: $font-weight;
+        }
+        
+        .emaile{
+            padding-top: $padding-top;
+        }
+        
+        .e_maile{
+            font-weight: $font-weight;
+        }
+        
+        .instagram{
+            padding-top: $padding-top;
+        }
+        
+        .cite_instagram{
+            font-weight: $font-weight;
+        }
+        
+        a{
+            text-decoration: none;
+        }   
+    }
+    .language{
+        margin-left: $margin-left-aside; 
+        padding-bottom: $padding-bottom-language;
+        padding-top: $padding-top-language;
+
+        .languages{
+            border-bottom: 5px solid $color-border;
+            width: 289px;
+            padding-bottom: $padding-bottom-aside;
+        }
+        .ukrainian{
+            font-weight: $font-weight;
+        }
+        
+        .english{
+            font-weight: $font-weight;
+        }
+     }
+    }
+    .second_container {
+        animation: sectionup linear forwards;
+        @include anitimfunc(1.5 1s);
+        
+        .summary_container{
+            margin-top: $margin-top-main;
+            margin-right: $margin-right-main;
+            margin-bottom: $padding-bottom-main;
+            margin-left: $margin-left-main;
+            max-width: 706px;
+        
+        .summary{
+            border-bottom: 5px solid $color-border;
+            max-width: 659px;
+            padding-left: $padding-left-main;
+            padding-bottom: $padding-bottom-main;
+            margin-bottom: $padding-bottom-main;
+            
+        }
+        
+        .summary_description{
+            font-weight: $font-weight;
+        }
+    }
+    .skill{
+        margin-left: $margin-left-main;
+
+        .skills{
+            border-bottom: 5px solid $color-border;
+            max-width: 659px;
+            padding: $padding-bottom-main;
+            padding: $padding-top-main;
+        }
+        
+        .ul_container{
+            font-weight: bold;
+            display: flex;
+
+            .ul1{
+                flex: 1;
+                }
+                
+                .ul2{
+                flex: 1;
+                }
+                
+        }
+    }
+
+    .work{
+        margin-top: $margin-top-main;
+        margin-left: $margin-left-main;
+        max-width: 706px;
+
+        .work_experience{
+            border-bottom: 5px solid $color-border;
+            max-width: 706px;
+            padding: $padding-bottom-main;
+            padding: $padding-top-main;
+        }
+        
+        .name_of{
+            font-weight: $font-weight;
+        }
+
+        .dates{
+            font-weight: $font-weight;
+        }
+        
+        .job{
+            font-weight: $font-weight;
+        }
+        
+        .project{
+            font-weight: $font-weight;
+        }
+
+        .second_paragraph {
+            opacity: .7;
+
+            &:hover {
+            opacity: 1;
+            animation: textopacity 1.5s linear forwards;
+            }
+
+            @keyframes textopacity {
+                from {
+                    opacity: 100%;
+                }
+                to {
+                    opacity: 70%;
+                }
+            }
+            
+            .employer{
+                font-weight: $font-weight;
+            }
+            
+            .employment{
+                font-weight: $font-weight;
+            }
+            
+            .job_title{
+                font-weight: $font-weight
+            }
+            
+            .role{
+                font-weight: $font-weight;
+            }
+        }
+    }
+        .education_container{
+            margin-top: $margin-top-main;
+            margin-left: $margin-left-main;
+
+            .education{
+                border-bottom: 5px solid $color-border;
+                max-width: 659px;
+                padding: $padding-bottom-main;
+                padding: $padding-top-main;
+            }
+            .studying{
+                font-weight: $font-weight;
+            }
+            
+            .institution{
+                font-weight: $font-weight;
+            }
+            
+            .major{
+                font-weight: $font-weight;
+            }
+            
+            @media screen and (max-width: 390px){
+                .main {
+                    flex-direction: column; 
+                } 
+                .language {
+                    padding-bottom: 20px;
+                    } 
+                .second_container {
+                    margin-left: -25px;
+                    justify-content: center;
+                } 
+            }
+        }
+    }
+}

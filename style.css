@@ -154,8 +154,7 @@ a{
 }
 
 .second_container {
-    animation: sectionup 1.5s 1s linear forwards;
-    
+    animation: sectionup 1.5s 1s linear forwards; 
 }
 
 .summary_container{
